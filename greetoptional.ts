@@ -1,11 +1,20 @@
+class Person{
+    name: String='';
 
-//OPTIONAL
-function greet(name:string,greeting?:string):string{
-    if(greeting){
-        return ${greeting},${name}!;
-    }else{
-        return Hello,${name}!;
+    constructor(_name: String){
+        this.name=this.name;
     }
 }
-console.log(greet("ALICE"));
-console.log(greet('Bob','Hi')); //Hi,Bob!
+class EmployeeOne extends Person{
+    empCode:number=0;
+
+    constructor(_empCode:number,name:String){
+        super(name);
+        this.empCode=_empCode;
+    }
+
+    displayName=():void=>{
+        console.log("Name : "+this.name);
+        console.log("Code :"+this.empCode);
+    }
+}

@@ -1,24 +1,18 @@
 "use strict";
-//OPTIONAL
-function greet(name, greeting) {
-    if (greeting) {
-        return $;
-        {
-            greeting;
-        }
-        $;
-        {
-            name;
-        }
-        !;
-    }
-    else {
-        return Hello, $;
-        {
-            name;
-        }
-        !;
+class Person {
+    constructor(_name) {
+        this.name = '';
+        this.name = this.name;
     }
 }
-console.log(greet("ALICE"));
-console.log(greet('Bob', 'Hi')); //Hi,Bob!
+class EmployeeOne extends Person {
+    constructor(_empCode, name) {
+        super(name);
+        this.empCode = 0;
+        this.displayName = () => {
+            console.log("Name : " + this.name);
+            console.log("Code :" + this.empCode);
+        };
+        this.empCode = _empCode;
+    }
+}
